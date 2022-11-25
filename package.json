@@ -2,11 +2,13 @@
   "name": "github-search-syntax",
   "version": "0.1.0",
   "description": "GitHub search syntax parser",
-  "main": "dist/index.js",
+  "type": "module",
+  "module": "dist/index.js",
+  "main": "dist/node.js",
+  "browser": "dist/browser.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc && node index.js"
+    "build": "tsc && rollup -c"
   },
   "author": "sdjdd",
   "license": "MIT",
@@ -14,6 +16,10 @@
     "chevrotain": "^10.4.1"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^23.0.2",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.1.0",
+    "rollup": "^3.4.0",
     "typescript": "^4.9.3"
   }
 }
