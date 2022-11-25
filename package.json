@@ -1,0 +1,19 @@
+{
+  "name": "github-search-syntax",
+  "version": "0.1.0",
+  "description": "GitHub search syntax parser",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc && node index.js"
+  },
+  "author": "sdjdd",
+  "license": "MIT",
+  "dependencies": {
+    "chevrotain": "^10.4.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  }
+}
